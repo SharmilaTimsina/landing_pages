@@ -1,0 +1,40 @@
+html {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial !important;
+    background-color: #295378 !important;
+    color: #000 !important;
+    padding: 51px 0 0 0 !important;
+    min-height: 100vh;
+    /* height: 100vh; */
+    position: relative;
+    margin: 0;
+    font-size: 14px !important;
+}
+
+.container {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
+
+.brown {
+    color: grey;
+}
+
+.lp3_terms_text {
+    color: black;
+}
+
+.fixed-footer {
+    position: absolute;
+    bottom: -1%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 5px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
