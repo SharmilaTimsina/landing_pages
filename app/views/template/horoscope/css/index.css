@@ -1,0 +1,466 @@
+html {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  color: #6e357c;
+}
+
+a:hover {
+  color: #6e357c;
+  text-decoration: none;
+}
+
+.nopad {
+  padding: 0;
+}
+
+
+/**LP BACKGROUND**/
+
+body {
+  background-image: url(../img/purple-heart.png);
+  background-color: #222 !important;
+  min-height: 100vh;
+  /* height: 100vh; */
+  position: relative;
+  margin: 0;
+}
+
+
+/**BOOSTRAP MODAL CLASS**/
+
+.modal.in {
+  display: block;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding: 0;
+}
+
+.modal-header .close {
+  margin: 0 5px;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  border-bottom: 1px solid #999;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  border-top: 4px solid #999;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.close {
+  font-size: 32px;
+  float: left;
+}
+
+
+/**MYASTRO LOGO**/
+
+.lp-logo {
+  background-image: url(../img/logo_bigger.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 110px;
+  height: 50px;
+  text-align: center;
+  float: right;
+}
+
+
+/**LOADING SPINNER**/
+
+.loader_zeta {
+  border: 16px solid #f3f3f3;
+  /* Light grey */
+  border-top: 16px solid #0080f9;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  display: block;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/**THERMOMETER HEART**/
+
+.love-heart {
+  background-image: url(../img/lp_heart.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+  width: 55vw;
+  height: 25vw;
+}
+
+
+/**ERROR MESSAGE**/
+
+.error_msg {
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+/**NETWORK OPERATOR INPUT**/
+
+.network-input {
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+/**PIN CODE INPUT**/
+
+.pin_code {
+  margin: 10px 0;
+}
+
+/**HOROSCOPE**/
+
+.horoscope {
+  font-size: 9vw;
+  color: black;
+}
+
+/**OPTIONS LP**/
+
+.opt-container {
+  margin-top: 10px;
+}
+
+/****option 1****/
+
+.opt1-img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.opt1 {
+  background-color: white;
+  border-radius: 20px;
+  width: auto;
+  margin-left: 8%;
+  width: 35%;
+  height: 124px;
+}
+
+/****option 2****/
+
+.opt2 {
+  background-color: white;
+  border-radius: 20px;
+  width: auto;
+  float: right;
+  margin-right: 8%;
+  width: 35%;
+  height: 124px;
+}
+
+.opt2-img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.opt-text.ltr {
+  font-size: 11px;
+}
+
+.opt-text.rtl {
+  font-size: 17px;
+}
+
+/**JS active class**/
+
+.active {
+  background-color: #fdfab7;
+}
+
+
+/**LP BUTTON**/
+
+/*.lp_button {
+  border: none;
+  background-color: #5eb75a;
+  border-radius: 10px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  top: 100%;
+  width: 45vw;
+  height: 15vw;
+  font-size: 8vw;
+  font-family: "Arial";
+  color: white;
+  text-align: center;
+  
+  margin-bottom: 10px;
+  margin-top: 10px;
+}*/
+/*text-shadow: 0px 3px 0px rgba(152, 1, 41, 0.7);*/
+
+.lp_button {
+  border: none;
+  border-radius: 10px;
+  background-image: -moz-linear-gradient( 90deg, rgb(78, 237, 52) 1%, rgb(176, 255, 172) 99%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(78, 237, 52) 1%, rgb(176, 255, 172) 99%);
+  background-image: -ms-linear-gradient( 90deg, rgb(78, 237, 52) 1%, rgb(176, 255, 172) 99%);
+  box-shadow: -0.585px 1.913px 10px 0px rgba(0, 0, 0, 0.5), inset 0px 3px 0px 0px rgba(255, 255, 255, 0.4);
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  top: 100%;
+  width: 40vw;
+  height: 15vw;
+  font-family: "Arial";
+  color: #6cce60;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  z-index: 54;
+}
+
+.lp_button.ltr {
+  font-size: 5.3vw !important;
+}
+
+.lp_button.rtl {
+  font-size: 10vw !important;
+}
+
+.subs_arrow {
+  width: 80%;
+  height: 80%;
+  vertical-align: sub;
+  margin-left: 5px;
+}
+
+.subs_text {
+  font-size: 100%;
+  display: inline-block;
+}
+
+
+/**LOGIN BUTTON**/
+
+.login-button {
+  color: #999 !important;
+  background-color: transparent;
+  border-color: #ccc !important;
+  box-shadow: 0px 3px 0px 0px rgb(190, 190, 190);
+  display: block;
+  margin: 0 auto;
+  padding: 3px 4px;
+  font-size: 9px;
+}
+
+.login-button:hover {
+  color: #999 !important;
+  background-color: transparent !important;
+  border-color: #ccc;
+}
+
+
+/**SERVICE CONDITIONS**/
+
+.service-conditions {
+  font-size: 3vw;
+  padding-top: 25px;
+}
+
+.terms-conditions {
+  padding: 5px 0;
+}
+
+.terms-conditions.ltr {
+  text-align: left;
+  font-size: 12px;
+}
+
+.terms-conditions.rtl {
+  text-align: right;
+  font-size: 12px;
+}
+
+#serv_cond {
+  /*color: #6e357c;*/
+  color: #fff;
+}
+
+#price_freq {
+  color: #999;
+  margin: 0 auto;
+  display: table;
+  font-size: 8px;
+}
+
+#price_freq_wifi {
+  color: #999;
+  margin: 0 auto;
+  display: table;
+  font-size: 8px;
+}
+
+#price_freq_3g {
+  color: #999;
+  margin: 0 auto;
+  display: table;
+  font-size: 8px;
+}
+
+
+/**TERMS LP PAGE**/
+
+.black {
+  color: black;
+  font-weight: 700;
+}
+
+
+/**FIXED FOOTER CSS**/
+
+.fixed-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 5px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tpay.loading .spinner {
+  margin-left: -40px;
+  /*FIX: spinner not in the middle without  -width/2 */
+}
+
+#mobile_phone {
+  text-align: center;
+}
+
+#terms_lp_link {
+  color: #fff;
+}
+
+
+/**CSS FO DESKTOP**/
+
+@media screen and (min-width: 451px) {
+
+  .love-heart {
+    width: 30vw;
+    height: 29vh;
+  }
+  /*
+  .opt1 {
+    margin-left: 14% !important;
+  }
+
+  .opt2 {
+    margin-right: 14% !important;
+  }
+  */
+  .form-container {
+    width: 30vw;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .horoscope {
+    font-size: 3vw;
+    margin: 0;
+  }
+
+  #price_freq,
+  #price_freq_3g,
+  #price_freq_wifi {
+    font-size: 8px;
+  }
+
+  #price_freq_wifi {
+    font-size: 1vw;
+  }
+
+  .lp_button {
+    width: 20vw;
+    height: 6vw;
+  }
+
+  .lp_button.ltr {
+    font-size: 2.6vw !important;
+  }
+
+  .lp_button.rtl {
+    font-size: 4vw !important;
+  }
+
+  .login-button {
+    color: #999 !important;
+    background-color: transparent;
+    border-color: #ffffff;
+    box-shadow: 0px 3px 0px 0px rgb(190, 190, 190);
+    display: block;
+    margin: 0 auto;
+    padding: 3px 6px !important;
+    font-size: 14px !important;
+  }
+
+  .service-conditions {
+    padding-top: 1%;
+  }
+
+  .terms-conditions {
+    margin-top: -20px;
+  }
+
+  #serv_cond {
+    font-size: 1vw;
+  }
+
+  #terms_lp_link {
+    font-size: 1vw !important;
+    color: #fff;
+  }
+
+}
+

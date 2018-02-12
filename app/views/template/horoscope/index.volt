@@ -197,4 +197,3 @@
     crossorigin="anonymous"></script>
 <!--BOOTSTRAP JQUERY-->
 
-</body>

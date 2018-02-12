@@ -52,6 +52,7 @@ class RenderController extends ControllerBase
                         "translation" => $data 
                     ]
                 );
+
             }
             else{
                 echo 'No result found! Please pass the valid parameter';
